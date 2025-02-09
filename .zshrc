@@ -140,7 +140,7 @@ alias rmrf="rm -rf"
 alias rmzi="find . -name \"*:Zone.Identifier\" -type f -delete"
 
 # --- LS SHORTCUTS ---
-# lias s="find . -name"
+alias s="find . -name"
 alias ls="exa"
 alias l="exa"
 
@@ -159,7 +159,6 @@ alias cch="cargo check"
 
 # --- TERMINAL SHORTCUTS ---
 alias v="nvim"
-# alias nv="neovide.exe --wsl &"
 alias tr="tree"
 alias to="touch"
 alias mk="mkdir"
@@ -169,3 +168,4 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push"
+alias lg="lazygit"
