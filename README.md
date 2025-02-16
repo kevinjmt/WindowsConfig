@@ -1,6 +1,6 @@
 # KJ Windows Config
 
-## 🌍 Disable Microsoft Edge and install softwares
+### 🌍 Disable Microsoft Edge and install softwares
 
 Go to [KJOS documentation] to disable Microsoft Edge, install [Firefox] and install your softwares using [Ninite].
 
@@ -8,16 +8,29 @@ Go to [KJOS documentation] to disable Microsoft Edge, install [Firefox] and inst
 [Firefox]: https://www.mozilla.org/en-US/firefox/new/?redirect_source=firefox-com
 [Ninite]: https://ninite.com/
 
-## 🤖 Disable Microsoft Copilot
+### 🤖 Disable Microsoft Copilot
 
 Open `Group Policy Editor` at location :
+
 ```
 User Configuration/Administrative Templates/Windows Components/Windows Copilot
 ```
+
 <u>Key:</u> `Turn off Windows Copilot` | <u>Value:</u> `enabled`
 
+### ⚙️ Install drivers and updates
 
-## 🦊 Firefox Extensions
+Download and install your drivers in the Windows Updates in the Windows settings or install them manually. Make sure to disable the automatic drivers updates in Windows Updates if you are installing them manually.
+
+Download and install your display drivers on the dedicated app according to the brand of your graphics card:
+
+- [AMD Drivers]
+- [NVIDIA Drivers]
+
+[AMD Drivers]: https://www.amd.com/en/products/software/adrenalin.html
+[NVIDIA Drivers]: https://www.nvidia.com/en-us/software/nvidia-app/
+
+### 🦊 Firefox Extensions
 
 - **[Ublock Origin]** - A powerful ad-blocker.
 - **[Ghostery]** - A powerful ad-blocker and stop trackers.
@@ -39,38 +52,39 @@ User Configuration/Administrative Templates/Windows Components/Windows Copilot
 [Dark Reader]: https://addons.mozilla.org/en-US/firefox/addon/darkreader/
 [EditThisCookie2]: https://addons.mozilla.org/en-US/firefox/addon/etc2/
 
-## ➕ nightTab configuration
+### ➕ nightTab configuration
 
 Download the nightTab settings file and import it under `Settings>Data>Backup>Import from file`.
 
-## 🦊 Firefox Progressive Web Apps (PWA)
+### 🦊 Firefox Progressive Web Apps (PWA)
 
 Open extension and follow the installation instructions.
 
 Then, open a web app and add previously added Firefox extensions to avoid ads and trackers. It is necessary to do it in the web app because Progressive Web Apps creates a new instance of Firefox on your PC (they are totally separated from each other).
 
-## 🪟 Install GlazeWM and Zebar
+### 🪟 Install GlazeWM and Zebar
 
 Install [GlazeWM] by following the instructions and paste the `.glzr` folder to get KJ configuration at location :
+
 ```
 %UserFolder%/
 ```
 
 [GlazeWM]: https://github.com/glzr-io/glazewm
 
-## 🖼️ KJOS Themes
+### 🖼️ KJOS Themes
 
 Install [KJOS Themes]
 
 [KJOS Themes]: https://kevinjmt.github.io/KJOS/documentation/6-themes/
 
-## 🖱️ Vision Cursors
+### 🖱️ Vision Cursors
 
 Download [Vision Cursors], unzip and click on `.install.inf` in both Light and Dark folders.
 
 [Vision Cursors]: https://www.deviantart.com/idarques/art/Vision-Cursor-911891424
 
-## 🌔 AutoDarkMode
+### 🌔 AutoDarkMode
 
 Install [AutoDarkMode] by following the installation instructions.
 
@@ -80,22 +94,33 @@ To use automatic theme switching, go to `Time` section of the app, select `🔵 
 
 [AutoDarkMode]: https://github.com/AutoDarkMode/Windows-Auto-Night-Mode
 
-## 🎮 Vencord
+### 🎮 Vencord
 
 Install [Vencord] by following the installation instructions.
 
 [Vencord]: https://vencord.dev/
 
-## ☁️ Enable OneDrive
+### ☁️ Enable OneDrive
 
-OneDrive needs to be activated in the registry editor at location :
+Using KJOS, OneDrive needs to be activated in the registry editor at location :
+
 ```
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive
 ```
+
 <u>Key:</u> `DisableFileSyncNGSC` | <u>Value:</u> `0`
 
+### 📱 Install and enable Microsoft Phone Link
 
-## 🧮 Install Office
+This feature might be disabled using KJOS, to make it work, go to registry editor and change :
+
+```
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent
+```
+
+<u>Key:</u> `DisableWindowsConsumerFeatures` | <u>Value:</u> `0`
+
+### 🧮 Install Office
 
 Go to [Microsoft official download page], select your language and clock in `Download`. Open the downloaded file and select a folder to extract the installer.
 
@@ -103,6 +128,7 @@ Then, launch the installer and follow the instructions. Once installed, open app
 
 [Microsoft official download page]: https://www.microsoft.com/en-us/download/details.aspx?id=49117
 
+---
 
 ## 🐧 Install WSL2
 
@@ -113,21 +139,40 @@ Then open `Turn Windows features on or off` and pay attention that the following
 - ✅ `Hyper-V`
 - ✅ `Windows Subsystem for Linux`
 
-
 Your system may ask you to restart. Follow the instructions to finish the installation.
 
 [Microsoft Store]: https://apps.microsoft.com/search?query=wsl&hl=en-us&gl=US
 
-## 🖥️ Install Neovim & dependencies
+### 🐚 Install zsh
+
+Install and configure [zsh] using the mentionned `curl` command.
+
+[zsh]: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
+
+### ✨ Install oh-my-zsh
+
+Install and configure [oh-my-zsh] using the mentionned `curl` command.
+
+[oh-my-zsh]: https://ohmyz.sh/#install
+
+### #️⃣ Powerlevel10k
+
+Install [Powerlevel10k] by following the installation instructions.
+
+[Powerlevel10k]: https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#getting-started
+
+### 🖥️ Install Neovim & dependencies
 
 Install [Neovim] by following the Linux distro installation instructions you chose.
 
 Download the `nvim` config `.tar` folder in the releases, and decompress using :
+
 ```
 tar –xvf nvim.tar
 ```
 
 Paste the `nvim` folder to the `.config` folder of your Linux distro using :
+
 ```
 cp -r ./nvim ~/.config/nvim
 ```
@@ -144,17 +189,17 @@ Restart Neovim and everything should be set up.
 [npm]: https://www.npmjs.com/
 [yarn]: https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
-## 🔡 Install a Nerdfont
+### 🔡 Install a Nerdfont
 
 Choose and download a [Nerdfont], then go to Settings at location : `Personalisation>Fonts`. Drag and drop the desired font.
 
-Open Windows Terminal, go to Settings, select your Linux distro. Select `Appearance` menu. 
+Open Windows Terminal, go to Settings, select your Linux distro. Select `Appearance` menu.
 
 In this menu, tick the `✅ Show all fonts` option, open drop-down selection for `Font face` and select the font face previously downloaded.
 
 [Nerdfont]: https://www.nerdfonts.com/
 
-## 🖥️ Install Neovide
+### 🖥️ Install Neovide
 
 Install [Neovide] by following the Windows installation instructions. To launch Neovide, use the `neovide --wsl` command.
 
@@ -176,8 +221,20 @@ You can change the font-family and the font-size in the `config.toml` file.
 
 [Neovide]: https://neovide.dev/
 
-## 🛏️ Install LazyGit
+### 🛏️ Install LazyGit
 
 Install [LazyGit] by following the installation instructions for your Linux distro.
 
 [LazyGit]: https://github.com/jesseduffield/lazygit#installation
+
+### 💻 Install Neofetch
+
+Install [Neofetch] by following the installation instructions for your Linux distro.
+
+[Neofetch]: https://github.com/dylanaraps/neofetch/wiki/Installation#osdistro-packages
+
+### 🎛️ Install btop
+
+Install [btop] by following the installation instructions for your Linux distro.
+
+[btop]: https://github.com/aristocratos/btop?tab=readme-ov-file#installation
