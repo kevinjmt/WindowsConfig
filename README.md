@@ -95,6 +95,15 @@ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive
 <u>Key:</u> `DisableFileSyncNGSC` | <u>Value:</u> `0`
 
 
+## 🧮 Install Office
+
+Go to [Microsoft official download page], select your language and clock in `Download`. Open the downloaded file and select a folder to extract the installer.
+
+Then, launch the installer and follow the instructions. Once installed, open apps and select the `XML file extension` option. Connect the apps to your Microsoft account and select the option `Link account to this app only`.
+
+[Microsoft official download page]: https://www.microsoft.com/en-us/download/details.aspx?id=49117
+
+
 ## 🐧 Install WSL2
 
 Go to the [Microsoft Store] and install the desired Linux distro.
@@ -109,11 +118,31 @@ Your system may ask you to restart. Follow the instructions to finish the instal
 
 [Microsoft Store]: https://apps.microsoft.com/search?query=wsl&hl=en-us&gl=US
 
-## 🖥️ Install Neovim
+## 🖥️ Install Neovim & dependencies
 
 Install [Neovim] by following the Linux distro installation instructions you chose.
 
+Download the `nvim` config `.tar` folder in the releases, and decompress using :
+```
+tar –xvf nvim.tar
+```
+
+Paste the `nvim` folder to the `.config` folder of your Linux distro using :
+```
+cp -r ./nvim ~/.config/nvim
+```
+
+Launch Neovim using `nvim` command to install all dependencies, it's important to notice that errors can be thrown after install. Once finished, restart Neovim and use `:LazyExtras` command. In this sub-menu, make sure the `editor.telescope` plugin is enabled (enable/disable using `x` key).
+
+To install your LSP server for auto-completion, use `:Mason` in Neovim. Install corresponding languages requirements if needed.
+
+To install the mardown previewer, go to the `~/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim/app/` folder in your linux distro and launch the installer using `./install.sh`. (make sure [npm] and [yarn] are installed before launching the script)
+
+Restart Neovim and everything should be set up.
+
 [Neovim]: https://neovim.io/
+[npm]: https://www.npmjs.com/
+[yarn]: https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
 ## 🔡 Install a Nerdfont
 
@@ -146,3 +175,9 @@ Then, paste the `neovide` folder at location :
 You can change the font-family and the font-size in the `config.toml` file.
 
 [Neovide]: https://neovide.dev/
+
+## 🛏️ Install LazyGit
+
+Install [LazyGit] by following the installation instructions for your Linux distro.
+
+[LazyGit]: https://github.com/jesseduffield/lazygit#installation
