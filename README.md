@@ -43,6 +43,7 @@ The recommended softwares to install are:
 - **[Phone Link]** - An app to connect your phone to your PC to send messages, copy and paste wirelessly, receive notifications, share screen etc.
 - **[Photos]** - A simple image viewer.
 - **[Snipping Tool]** - An app to take screenshots.
+- **[Terminal]** - A powerful terminal.
 
 [Winget]: https://learn.microsoft.com/en-us/windows/package-manager/winget/
 [Microsoft Store]: https://apps.microsoft.com/
@@ -54,6 +55,7 @@ The recommended softwares to install are:
 [Phone Link]: https://apps.microsoft.com/detail/9nmpj99vjbwv?hl=en-us&gl=FR
 [Photos]: https://apps.microsoft.com/detail/9wzdncrfjbh4?hl=en-us&gl=FR
 [Snipping Tool]: https://apps.microsoft.com/detail/9mz95kl8mr0l?hl=en-us&gl=FR
+[Terminal]: https://apps.microsoft.com/detail/9n0dx20hk701?query=wsl&hl=en-us&gl=FR
 
 ### ☁️ Enable OneDrive
 
