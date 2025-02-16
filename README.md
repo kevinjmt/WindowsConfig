@@ -30,6 +30,57 @@ Download and install your display drivers on the dedicated app according to the 
 [AMD Drivers]: https://www.amd.com/en/products/software/adrenalin.html
 [NVIDIA Drivers]: https://www.nvidia.com/en-us/software/nvidia-app/
 
+### 💽 Install other Microsoft Apps
+
+To install other Microsoft Apps, you can use [Winget] or go to the [Microsoft Store].
+
+The recommended softwares to install are:
+
+- **[Calculator]** - A powerful calculator.
+- **[Media Player]** - A simple media player.
+- **[ToDo]** - A simple and very convenient todo app.
+- **[Notepad]** - A simple file reader.
+- **[Phone Link]** - An app to connect your phone to your PC to send messages, copy and paste wirelessly, receive notifications, share screen etc.
+- **[Photos]** - A simple image viewer.
+- **[Snipping Tool]** - An app to take screenshots.
+
+[Winget]: https://learn.microsoft.com/en-us/windows/package-manager/winget/
+[Microsoft Store]: https://apps.microsoft.com/
+
+[Calculator]: https://apps.microsoft.com/detail/9wzdncrfhvn5?hl=en-us&gl=FR
+[Media Player]: https://apps.microsoft.com/detail/9wzdncrfj3pt?hl=en-us&gl=FR
+[ToDo]: https://apps.microsoft.com/detail/9nblggh5r558?hl=en-us&gl=FR
+[Notepad]: https://apps.microsoft.com/detail/9msmlrh6lzf3?hl=en-us&gl=FR
+[Phone Link]: https://apps.microsoft.com/detail/9nmpj99vjbwv?hl=en-us&gl=FR
+[Photos]: https://apps.microsoft.com/detail/9wzdncrfjbh4?hl=en-us&gl=FR
+[Snipping Tool]: https://apps.microsoft.com/detail/9mz95kl8mr0l?hl=en-us&gl=FR
+
+### ☁️ Enable OneDrive
+
+Using KJOS, OneDrive needs to be activated in the registry editor at location :
+
+```
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive
+```
+
+<u>Key:</u> `DisableFileSyncNGSC` | <u>Value:</u> `0`
+
+### 📱 Enable Microsoft Phone Link
+
+This feature might be disabled using KJOS, to make it work, go to registry editor and change :
+
+```
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent
+```
+
+<u>Key:</u> `DisableWindowsConsumerFeatures` | <u>Value:</u> `0`
+
+### 📺 Install PowerToys
+
+Install [PowerToys] by following the installation instructions for your Linux distro.
+
+[PowerToys]: https://github.com/microsoft/PowerToys/releases
+
 ### 🦊 Firefox Extensions
 
 - **[Ublock Origin]** - A powerful ad-blocker.
@@ -100,26 +151,6 @@ Install [Vencord] by following the installation instructions.
 
 [Vencord]: https://vencord.dev/
 
-### ☁️ Enable OneDrive
-
-Using KJOS, OneDrive needs to be activated in the registry editor at location :
-
-```
-Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive
-```
-
-<u>Key:</u> `DisableFileSyncNGSC` | <u>Value:</u> `0`
-
-### 📱 Install and enable Microsoft Phone Link
-
-This feature might be disabled using KJOS, to make it work, go to registry editor and change :
-
-```
-Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent
-```
-
-<u>Key:</u> `DisableWindowsConsumerFeatures` | <u>Value:</u> `0`
-
 ### 🧮 Install Office
 
 Go to [Microsoft official download page], select your language and clock in `Download`. Open the downloaded file and select a folder to extract the installer.
@@ -140,8 +171,6 @@ Then open `Turn Windows features on or off` and pay attention that the following
 - ✅ `Windows Subsystem for Linux`
 
 Your system may ask you to restart. Follow the instructions to finish the installation.
-
-[Microsoft Store]: https://apps.microsoft.com/search?query=wsl&hl=en-us&gl=US
 
 ### 🐚 Install zsh
 
