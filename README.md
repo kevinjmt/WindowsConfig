@@ -2,11 +2,12 @@
 
 ### 🌍 Disable Microsoft Edge and install softwares
 
-Go to [KJOS documentation] to disable Microsoft Edge, install [Firefox] and install your softwares using [Ninite].
+Go to [KJOS documentation] to disable Microsoft Edge, install [Firefox] and install your softwares using [Ninite]. The recommended softwares are listed on [KJOS website].
 
-[KJOS documentation]: https://kevinjmt.github.io/KJOS/documentation/3-navigateur
+[KJOS documentation]: https://kevinjmt.github.io/KJOS/en/documentation/3-web-browser
 [Firefox]: https://www.mozilla.org/en-US/firefox/new/?redirect_source=firefox-com
-[Ninite]: https://ninite.com/
+[Ninite]: https://ninite.com
+[KJOS website]: https://kevinjmt.github.io/KJOS/en/documentation/5-softwares
 
 ### 🤖 Disable Microsoft Copilot
 
@@ -28,7 +29,7 @@ Download and install your display drivers on the dedicated app according to the 
 - [NVIDIA Drivers]
 
 [AMD Drivers]: https://www.amd.com/en/products/software/adrenalin.html
-[NVIDIA Drivers]: https://www.nvidia.com/en-us/software/nvidia-app/
+[NVIDIA Drivers]: https://www.nvidia.com/en-us/software/nvidia-app
 
 ### 💽 Install other Microsoft Apps
 
@@ -45,8 +46,8 @@ The recommended softwares to install are:
 - **[Snipping Tool]** - An app to take screenshots.
 - **[Terminal]** - A powerful terminal.
 
-[Winget]: https://learn.microsoft.com/en-us/windows/package-manager/winget/
-[Microsoft Store]: https://apps.microsoft.com/
+[Winget]: https://learn.microsoft.com/en-us/windows/package-manager/winget
+[Microsoft Store]: https://apps.microsoft.com
 
 [Calculator]: https://apps.microsoft.com/detail/9wzdncrfhvn5?hl=en-us&gl=FR
 [Media Player]: https://apps.microsoft.com/detail/9wzdncrfj3pt?hl=en-us&gl=FR
@@ -59,7 +60,7 @@ The recommended softwares to install are:
 
 ### ☁️ Enable OneDrive
 
-Using KJOS, OneDrive needs to be activated in the registry editor at location :
+Using [KJOS], OneDrive needs to be activated in the registry editor at location :
 
 ```
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive
@@ -67,9 +68,11 @@ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive
 
 <u>Key:</u> `DisableFileSyncNGSC` | <u>Value:</u> `0`
 
+[KJOS]: https://kevinjmt.github.io/KJOS/en
+
 ### 📱 Enable Microsoft Phone Link
 
-This feature might be disabled using KJOS, to make it work, go to registry editor and change :
+This feature might be disabled using [KJOS], to make it work, go to registry editor and change :
 
 ```
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent
@@ -95,15 +98,15 @@ Install [PowerToys] by following the installation instructions for your Linux di
 - **[Dark Reader]** - Dark mode for websites.
 - **[EditThisCookie2]** - Edit cookies on websites
 
-[Ublock Origin]: https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
-[Ghostery]: https://addons.mozilla.org/en-US/firefox/addon/ghostery/
-[Bitwarden]: https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
-[QR Code]: https://addons.mozilla.org/en-US/firefox/addon/qr-code-address-bar/
-[nightTab]: https://addons.mozilla.org/en-US/firefox/addon/nighttab/
-[Progressive Web Apps]: https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/
-[I Still don't care about cookies]: https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookies/
-[Dark Reader]: https://addons.mozilla.org/en-US/firefox/addon/darkreader/
-[EditThisCookie2]: https://addons.mozilla.org/en-US/firefox/addon/etc2/
+[Ublock Origin]: https://addons.mozilla.org/en-US/firefox/addon/ublock-origin
+[Ghostery]: https://addons.mozilla.org/en-US/firefox/addon/ghostery
+[Bitwarden]: https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager
+[QR Code]: https://addons.mozilla.org/en-US/firefox/addon/qr-code-address-bar
+[nightTab]: https://addons.mozilla.org/en-US/firefox/addon/nighttab
+[Progressive Web Apps]: https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox
+[I Still don't care about cookies]: https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookies
+[Dark Reader]: https://addons.mozilla.org/en-US/firefox/addon/darkreader
+[EditThisCookie2]: https://addons.mozilla.org/en-US/firefox/addon/etc2
 
 ### ➕ nightTab configuration
 
@@ -129,7 +132,7 @@ Install [GlazeWM] by following the instructions and paste the `.glzr` folder to 
 
 Install [KJOS Themes]
 
-[KJOS Themes]: https://kevinjmt.github.io/KJOS/documentation/6-themes/
+[KJOS Themes]: https://kevinjmt.github.io/KJOS/en/documentation/6-themes
 
 ### 🖱️ Vision Cursors
 
@@ -151,7 +154,7 @@ To use automatic theme switching, go to `Time` section of the app, select `🔵 
 
 Install [Vencord] by following the installation instructions.
 
-[Vencord]: https://vencord.dev/
+[Vencord]: https://vencord.dev
 
 ### 🧮 Install Office
 
@@ -216,8 +219,8 @@ To install the mardown previewer, go to the `~/.local/share/nvim/site/pack/packe
 
 Restart Neovim and everything should be set up.
 
-[Neovim]: https://neovim.io/
-[npm]: https://www.npmjs.com/
+[Neovim]: https://neovim.io
+[npm]: https://www.npmjs.com
 [yarn]: https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
 ### 🔡 Install a Nerdfont
@@ -228,7 +231,7 @@ Open Windows Terminal, go to Settings, select your Linux distro. Select `Appeara
 
 In this menu, tick the `✅ Show all fonts` option, open drop-down selection for `Font face` and select the font face previously downloaded.
 
-[Nerdfont]: https://www.nerdfonts.com/
+[Nerdfont]: https://www.nerdfonts.com
 
 ### 🖥️ Install Neovide
 
@@ -250,7 +253,7 @@ Then, paste the `neovide` folder at location :
 
 You can change the font-family and the font-size in the `config.toml` file.
 
-[Neovide]: https://neovide.dev/
+[Neovide]: https://neovide.dev
 
 ### 🛏️ Install LazyGit
 
