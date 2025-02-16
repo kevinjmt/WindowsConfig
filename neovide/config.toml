@@ -1,3 +1,4 @@
 [font]
 normal = { family = "DejaVuSansM Nerd Font Mono" }
 size = 12
+wsl = true
