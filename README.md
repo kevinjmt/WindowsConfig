@@ -223,6 +223,20 @@ Restart Neovim and everything should be set up.
 [npm]: https://www.npmjs.com
 [yarn]: https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
+### 📃 Install Vimtex and LaTeX support on Neovim
+
+To install Vimtex, install [TexLive] to get all `.sty` files and packages. Currently, TexLive has over 4800 packages (about 9GB) to download, it takes about an hour depending on your PC configuration and your internet connection.
+
+Next, install [latexmk] on WSL and add the shell script at location `~/.local/bin/sumatrapdf.sh`.
+
+On Windows, download [SumatraPDF] as a PDF viewer, this one is highly efficient and very lightweight.
+
+Open Neovim and that's it. To use Vimtex features, type `\ll` to launch Sumatra and compile the `/tex` file. Then, you just have to save the file to recompile.
+
+[TexLive]: https://www.tug.org/texlive
+[latexmk]: https://mgeier.github.io/latexmk.html
+[SumatraPDF]: https://www.sumatrapdfreader.org/free-pdf-reader
+
 ### 🔡 Install a Nerdfont
 
 Choose and download a [Nerdfont], then go to Settings at location : `Personalisation>Fonts`. Drag and drop the desired font.
