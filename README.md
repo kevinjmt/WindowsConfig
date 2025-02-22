@@ -164,6 +164,14 @@ Then, launch the installer and follow the instructions. Once installed, open app
 
 [Microsoft official download page]: https://www.microsoft.com/en-us/download/details.aspx?id=49117
 
+### ➕ Install other Apps
+
+You can install these softwares to enhance your experience:
+
+- **[QuickShare]** - File sharing between Android and Windows devices.
+
+[QuickShare]: https://apps.microsoft.com/detail/9PCTGDFXVZLJ
+
 ---
 
 ## 🐧 Install WSL2
@@ -179,7 +187,7 @@ Your system may ask you to restart. Follow the instructions to finish the instal
 
 ### 🐚 Install zsh
 
-Install and configure [zsh] using the mentionned `curl` command.
+Install and configure [zsh] using the mentionned `curl` command. Then copy the `.zshrc` file into your home folder to get all shortcuts.
 
 [zsh]: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 
@@ -194,6 +202,10 @@ Install and configure [oh-my-zsh] using the mentionned `curl` command.
 Install [Powerlevel10k] by following the installation instructions.
 
 [Powerlevel10k]: https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#getting-started
+
+### 💻 Configure Vim as a rescue editor
+
+Copy the `.vimrc` file and paste it in your home folder.
 
 ### 🖥️ Install Neovim & dependencies
 
@@ -251,15 +263,9 @@ In this menu, tick the `✅ Show all fonts` option, open drop-down selection for
 
 Install [Neovide] by following the Windows installation instructions. To launch Neovide, use the `neovide --wsl` command.
 
-To open a file using the `nv` shortcut, add this to your `.zshrc` file:
+To open Neovide, use the `nv` shortcut. It can be followed by a filename.
 
-```
-nv() {
-    neovide.exe --wsl "$@" &
-}
-```
-
-Then, paste the `neovide` folder at location :
+Then, paste the `neovide` config folder at location :
 
 ```
 %UserFolder%/AppData/Roaming/
