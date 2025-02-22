@@ -169,8 +169,10 @@ Then, launch the installer and follow the instructions. Once installed, open app
 You can install these softwares to enhance your experience:
 
 - **[QuickShare]** - File sharing between Android and Windows devices.
+- **[LocalSend]** - Send files between Windows, MacOS, Linux, Android and IOS devices.
 
 [QuickShare]: https://apps.microsoft.com/detail/9PCTGDFXVZLJ
+[LocalSend]: https://localsend.org
 
 ---
 
@@ -211,23 +213,17 @@ Copy the `.vimrc` file and paste it in your home folder.
 
 Install [Neovim] by following the Linux distro installation instructions you chose.
 
-Download the `nvim` config `.tar` folder in the releases, and decompress using :
+Paste the `nvim` config folder to the `.config` folder of your Linux distro using :
 
 ```
-tar –xvf nvim.tar
-```
-
-Paste the `nvim` folder to the `.config` folder of your Linux distro using :
-
-```
-cp -r ./nvim ~/.config/nvim
+cp -r ./WindowsConfig/nvim ~/.config/nvim
 ```
 
 Launch Neovim using `nvim` command to install all dependencies, it's important to notice that errors can be thrown after install. Once finished, restart Neovim and use `:LazyExtras` command. In this sub-menu, make sure the `editor.telescope` plugin is enabled (enable/disable using `x` key).
 
 To install your LSP server for auto-completion, use `:Mason` in Neovim. Install corresponding languages requirements if needed.
 
-To install the mardown previewer, go to the `~/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim/app/` folder in your linux distro and launch the installer using `./install.sh`. (make sure [npm] and [yarn] are installed before launching the script)
+To install the mardown previewer, go to the `~/.local/share/nvim/lazy/markdown-preview.nvim/app/` folder in your linux distro and launch the installer using `./install.sh`. (make sure [npm] and [yarn] are installed before launching the script)
 
 Restart Neovim and everything should be set up.
 
