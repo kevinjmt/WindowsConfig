@@ -113,7 +113,7 @@ body,
 }
 
 .cpu .high-usage {
-    color: #900029;
+    color: #ff4b00ff;
 }
 
 .battery {
@@ -121,9 +121,9 @@ body,
 }
 
 .battery .charging-icon {
-    color: #147814ff;
+    color: #32ff32ff;
     position: absolute;
     font-size: 7px;
     left: -8px;
-    top: 3px;
+    top: 4px;
 }
