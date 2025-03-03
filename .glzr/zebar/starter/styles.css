@@ -10,6 +10,7 @@ i {
 }
 
 body {
+    transition: 0.5s;
     color: rgb(0 200 255 / 90%);
     font-weight: bold;
     font-family: ui-monospace, monospace;
@@ -31,7 +32,7 @@ body,
 }
 
 #root {
-    border-bottom: 1px solid rgb(0 200 255 / 5%);
+    /*border-bottom: 1px solid rgb(0 200 255 / 5%);*/
     background: linear-gradient(rgb(20 20 20 / 85%), rgb(20 20 20 / 100%));
 }
 
@@ -75,7 +76,8 @@ body,
 }
 
 .workspace {
-    background: rgb(0 200 255 / 5%);
+    transition: 0.25s;
+    background: rgb(0 200 255 / 15%);
     margin-right: 4px;
     padding: 4px 8px;
     font-weight: bold;
@@ -85,14 +87,16 @@ body,
     cursor: pointer;
 
     &.displayed {
+        transition: 0.25s;
         color: rgb(0 0 0 / 100%);
         background: rgb(0 200 255 / 15%);
     }
 
     &.focused,
     &:hover {
+        transition: 0.25s;
         color: rgb(0 0 0 / 50%);
-        background: rgb(0 200 255 / 50%);
+        background: rgb(0 200 255 / 75%);
     }
 }
 
@@ -112,15 +116,22 @@ body,
     margin-right: 4px;
 }
 
+.cpu {
+    transition: 0.5s;
+}
+
 .cpu .high-usage {
+    transition: 0.5s;
     color: #ff4b00ff;
 }
 
 .battery {
+    transition: 0.5s;
     position: relative;
 }
 
 .battery .charging-icon {
+    transition: 0.5s;
     color: #32ff32ff;
     position: absolute;
     font-size: 7px;
