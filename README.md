@@ -2,12 +2,19 @@
 
 ### 🌍 Disable Microsoft Edge and install softwares
 
-Go to [KJOS documentation] to disable Microsoft Edge, install [Firefox] and install your softwares using [Ninite]. The recommended softwares are listed on [KJOS website].
+Go to [KJOS documentation] to disable Microsoft Edge, install [Firefox] (or [Zen Browser]) and install your softwares using [Ninite]. The recommended softwares are listed on [KJOS website].
 
 [KJOS documentation]: https://kevinjmt.github.io/KJOS/en/documentation/3-web-browser
 [Firefox]: https://www.mozilla.org/en-US/firefox/new/?redirect_source=firefox-com
+[Zen Browser]: https://zen-browser.app
 [Ninite]: https://ninite.com
 [KJOS website]: https://kevinjmt.github.io/KJOS/en/documentation/5-softwares
+
+### ⌨️ QWERTY-FR
+
+If you want to use a QWERTY keyboard with French acccents, you can install [QWERTY-FR].
+
+[QWERTY-FR]: https://github.com/qwerty-fr/qwerty-fr#readme
 
 ### 🤖 Disable Microsoft Copilot
 
@@ -48,7 +55,6 @@ The recommended softwares to install are:
 
 [Winget]: https://learn.microsoft.com/en-us/windows/package-manager/winget
 [Microsoft Store]: https://apps.microsoft.com
-
 [Calculator]: https://apps.microsoft.com/detail/9wzdncrfhvn5?hl=en-us&gl=FR
 [Media Player]: https://apps.microsoft.com/detail/9wzdncrfj3pt?hl=en-us&gl=FR
 [ToDo]: https://apps.microsoft.com/detail/9nblggh5r558?hl=en-us&gl=FR
@@ -107,6 +113,29 @@ Install [PowerToys] by following the installation instructions for your Linux di
 [I Still don't care about cookies]: https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookies
 [Dark Reader]: https://addons.mozilla.org/en-US/firefox/addon/darkreader
 [EditThisCookie2]: https://addons.mozilla.org/en-US/firefox/addon/etc2
+
+### 💤 Zen Browser configuration
+
+To configure Zen-Browser, hit `Ctrl + T` to open a new tab and type : `about:config`.
+
+In the search option field, toggle these settings:
+
+- <u>Key:</u> `browser.urlbar.openintab` | <u>Value:</u> `true`
+- <u>Key:</u> `zen.urlbar.replace-newtab` | <u>Value:</u> `false`
+
+Then, install these recommended plugins for Zen:
+
+- [Audio Indicator Enhanced] - Animation on tab when playing sounds.
+- [Better Find Bar] - Enhance `Ctrl + F` shortcut to fit Zen design.
+- [Erics Zen UI Tweak Box] - Tweaks some Zen designs.
+- [Tab Numbers] - Indicates tab numbers to go faster when switching tabs.
+
+[Audio Indicator Enhanced]: https://zen-browser.app/mods/2317fd93-c3ed-4f37-b55a-304c1816819e
+[Better Find Bar]: https://zen-browser.app/mods/a6335949-4465-4b71-926c-4a52d34bc9c0
+[Erics Zen UI Tweak Box]: https://zen-browser.app/mods/bed8c922-616a-4165-8c86-6822ccf478ad
+[Tab Numbers]: https://zen-browser.app/mods/22c9ec3b-7c62-46ae-991f-c8fff5046829
+
+> 📌 If you are using QWERTY-FR keyboard, you may have to change the keyboard shortcuts in the settings to be able to switch between workspaces, tabs, open a new tab, split view etc
 
 ### ➕ nightTab configuration
 
